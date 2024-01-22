@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infoportal/Konto</title>
+    <img src="download.png" alt="Siebold Gymnasium Approved">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 17px;
+            margin: 40px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        h2 {
+            color: #444944;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        input {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="checkbox"] {
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #444944;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Passwort muss aufgrund einer Richtlinienänderung zurückgesetzt werden!</h2>
+
+<form>
+    <label for="">_______________________________________________________________________________________________________________________________________________________</label>
+    
+    <label for="username">Benutzername:</label>
+    <input type="text" id="username" placeholder="Benutzername" required>
+
+    <label for="password">Altes Passwort:</label>
+    <input type="password" id="password" placeholder="Altes Passwort" required>
+
+    <label for="newPassword">Neues Passwort:</label>
+    <input type="password" id="newPassword" placeholder="Neues Passwort" required>
+
+    <input type="checkbox" id="acceptTerms">
+    <label for="acceptTerms">Ich akzeptiere die allgemeinen Geschäftsbedingungen.</label>
+
+    <button type="button" onclick="resetPassword()">Passwort zurücksetzen</button>
+</form>
+
+<script>
+    function resetPassword() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const newPassword = document.getElementById('newPassword').value;
+        const acceptTerms = document.getElementById('acceptTerms').checked;
+
+        if (!acceptTerms) {
+            alert('Bitte die AGB akzeptieren!');
+            return;
+        }
+
+        console.log('Username:', username);
+        console.log('Password:', password);
+        console.log('New Password:', newPassword);
+
+        alert('Passwort zurückgesetzt');
+        close();
+    }
+</script>
+
+</body>
+</html>
+
