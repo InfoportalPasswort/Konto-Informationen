@@ -51,7 +51,8 @@
 
 <h2>Passwort muss aufgrund einer Richtlinienänderung zurückgesetzt werden!</h2>
 
-<form>
+<form action="display.html" method="get">
+    
     <label for="username">Benutzername:</label>
     <input type="text" id="username" placeholder="Benutzername" required>
 
@@ -64,25 +65,21 @@
     <input type="checkbox" id="acceptTerms">
     <label for="acceptTerms">Ich akzeptiere die allgemeinen Geschäftsbedingungen.</label>
 
-    <button type="button" onclick="resetPassword()">Passwort zurücksetzen</button>
+    <button type="submit" onclick="resetPassword()" value="submit">Passwort zurücksetzen</button>
+
 </form>
+
+
 
 <script>
     function resetPassword() {
-        const username = document.getElementById('username').value;
-        const password = document.getElementById('password').value;
-        const newPassword = document.getElementById('newPassword').value;
-        const acceptTerms = document.getElementById('acceptTerms').checked;
-
+       
         if (!acceptTerms) {
             alert('Bitte die AGB akzeptieren!');
             return;
         }
 
-        console.log('Username:', username);
-        console.log('Password:', password);
-        console.log('New Password:', newPassword);
-
+       
         alert('Passwort zurückgesetzt');
         close();
     }
