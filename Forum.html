@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - InvestAvisor</title>
+    <style>
+        /* CSS-Stile hier einfügen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e395a; /* Dark blue background */
+            color: #fff; /* White text */
+            padding-top: 80px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        nav {
+            color:#e7e7e7;
+        }
+        nav a {
+            color: #e7e7e7;
+        }
+        .forum-post {
+            background-color: #152941; /* Darker blue background */
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .forum-post h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .forum-post p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .forum-post .author {
+            color: #4698f0; /* Link color */
+            font-weight: bold;
+        }
+
+        .forum-post .date {
+            color: #ebebeb; /* Date color */
+        }
+
+        .forum-form {
+            margin-top: 40px;
+        }
+
+        .forum-form textarea,
+        .forum-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            border: 1px solid #dadada;
+            border-radius: 5px;
+        }
+
+        .forum-form input[type="submit"] {
+            background-color: #4698f0; /* Button color */
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .forum-form input[type="submit"]:hover {
+            background-color: #4698f0; /* Button color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>InvestAvisor Forum</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="menu-link" data-target="index">Home</a></li>
+                    <li><a href="#" class="menu-link" data-target="About">About Us</a></li>
+                    <li><a href="#" class="menu-link" data-target="Services">Services</a></li>
+                    <li><a href="#" class="menu-link" data-target="Login">Login</a></li>
+                    <li><a href="#" class="menu-link" data-target="Register">Register</a></li>
+                    <li><a href="#" class="menu-link" data-target="Portfolio">Mein Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Recent Forum Posts</h2>
+        <div class="forum-post">
+            <h2><a href="#">Topic Title</a></h2>
+            <p>InvestAvisor ist die beste Geschäftsidee!</p>
+            <p class="author">Posted by: John Doe</p>
+            <p class="date">Posted on: January 1, 2024</p>
+        </div>
+        <!-- Additional forum posts go here -->
+    </section>
+
+    <section class="container">
+        <h2>Posts</h2>
+        <form class="forum-form" action="post.php" method="POST">
+            <textarea name="post_content" placeholder="Schreibe etwas..." rows="5" required></textarea>
+            <input type="submit" value="Submit Post">
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 InvestAvisor. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.menu-link').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var target = this.getAttribute('data-target');
+                window.location.href = target + '.html';
+            });
+        });
+    </script>
+</body>
+</html>

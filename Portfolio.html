@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e395a; /* Light grey background */
+            color: #333; /* Dark text color */
+            padding-top: 80px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item .ticker {
+            font-weight: bold;
+            color: #007bff; /* Link color */
+        }
+
+        .portfolio-item .price {
+            color: #28a745; /* Green color for price */
+        }
+
+        .portfolio-item .change {
+            color: #dc3545; /* Red color for negative change */
+        }
+        li {
+            color:#fff;
+        }
+        a {
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="portfolio-item">
+            <h2>Apple Inc.</h2>
+            <p>Ticker: <span class="ticker">AAPL</span></p>
+            <p>Price: <span class="price">$150.25</span></p>
+            <p>Change: <span class="change">-0.75 (-0.5%)</span></p>
+        </div>
+
+        <div class="portfolio-item">
+            <h2>iShares MSCI Emerging Markets ETF</h2>
+            <p>Ticker: <span class="ticker">EEM</span></p>
+            <p>Price: <span class="price">$55.60</span></p>
+            <p>Change: <span class="change">+0.40 (+0.72%)</span></p>
+        </div>
+
+        <div class="portfolio-item">
+            <h2>Bitcoin</h2>
+            <p>Ticker: <span class="ticker">BTC</span></p>
+            <p>Price: <span class="price">$45,000</span></p>
+            <p>Change: <span class="change">-500 (-1.1%)</span></p>
+        </div>
+
+        <!-- Additional portfolio items go here -->
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 InvestAvisor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

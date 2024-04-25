@@ -3,100 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infoportal/Konto</title>
-    <img src="download.png" alt="Siebold Gymnasium Approved">
+    
+    <title>InvestAvisor</title>
+    
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            font-size: 17px;
-            margin: 40px;
-            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background-color: #1e395a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        header {
+            background-color: #1e395a;
+            padding: 20px;
             text-align: center;
+            border-color: #fff;
+        }
+        h1 {
+            color: #fff;
+            font-size: 45px;
+        }
+        hr {
+            border-color: #fff;
         }
         h2 {
-            color: #444944;
+            color: #1e395a;
         }
-        label {
+        p {
+            color: #1e395a;
+        }
+        p2 {
+            color:#1e395a
+        }
+        nav {
+            display: none;
+            background-color: #363636;
+            padding: 10px;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            position: absolute;
+        }
+        nav a {
             display: block;
-            margin: 10px 0;
-            font-size: 16px;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
         }
-        input {
-            width: 60%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        input[type="checkbox"] {
-            margin-top: 10px;
-        }
-        button {
-            padding: 10px;
-            background-color: #444944;
-            color: white;
-            border: none;
-            border-radius: 4px;
+        .menu-btn {
             cursor: pointer;
-            font-size: 16px;
         }
-        button:hover {
-            background-color: #333;
+        .board {
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            background-color: #dadada;
+            border-radius: 10px;
+            padding: 70px;
+            width: 90%;
+            line-height: 2;
+        }   
+        .container {
+            text-align: center;
+            padding: 60px
         }
         footer {
-            background-color: #444944;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #1e395a;
+            color: #dadada;
             text-align: center;
+            padding: 20px;
+            width: 100%;
+            position: absolute;
+            margin-bottom: 1;
         }
+    
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>InvestAvisor</h1>
+        <div class="menu-btn">Menu</div>
+    </header>
+    <nav id="menu">
+        <a href="#" class="menu-link" data-target="About">About Us</a>
+        <a href="#" class="menu-link" data-target="Portfolio">Mein Portfolio</a>
+        <a href="#" class="menu-link" data-target="Login">Anmelden</a>
+        <a href="#" class="menu-link" data-target="Register">Registrieren</a>
+        <a href="#" class="menu-link" data-target="Forum">Forum</a>
+        <a href="#" class="menu-link" data-target="Services"> Unser Service</a>
+    </nav>
+    <hr></hr>
+    <div class="container">
+        <img src="invest.jpg">
+    </div>
+    <div class="board">
+        <h2>Zukünftige Projekte </h2>
+        <p>Die Zukunft gestalten: InvestAvisor's Vision für innovative Projekte
+                        Bei InvestAvisor stehen wir an vorderster Front der Finanztechnologie und sind ständig bestrebt, die Grenzen des Möglichen zu erweitern. Unsere Vision ist es, Investieren für jedermann zugänglich und einfach zu machen, indem wir innovative Technologien und maßgeschneiderte Lösungen nutzen. In den kommenden Jahren streben wir eine Reihe aufregender Projekte an, die unsere Mission vorantreiben und unsere Kunden noch besser unterstützen sollen.
+            
+            1. Erweiterte personalisierte Portfolios
+            Unser Hauptaugenmerk liegt darauf, personalisierte Anlagestrategien zu entwickeln, die die individuellen Bedürfnisse und Ziele jedes Kunden berücksichtigen. Wir werden unsere Algorithmen weiterentwickeln, um noch präzisere Portfolios zusammenzustellen, die auf Faktoren wie Risikotoleranz, Einkommensziele, Lebensereignisse und ethische Präferenzen zugeschnitten sind. Durch die Integration von maschinellem Lernen und KI werden unsere Portfolios kontinuierlich optimiert und an sich ändernde Marktbedingungen angepasst.
+            
+            2. Ausbau der Investment-Optionen
+            Wir werden unser Angebot an Anlageprodukten erweitern, um unseren Kunden eine noch breitere Palette von Möglichkeiten zu bieten. Neben Aktien, ETFs und Fonds werden wir den Zugang zu alternativen Anlagen wie Kryptowährungen, Impact-Investing und nachhaltigen Fonds erleichtern. Unser Ziel ist es, Investoren die Werkzeuge zu geben, um ihre Portfolios diversifiziert und zukunftsfähig zu gestalten.
+            
+            3. Verbesserte Benutzererfahrung
+            Die Zufriedenheit unserer Kunden steht bei uns an erster Stelle, und daher werden wir unsere Plattform kontinuierlich optimieren, um eine nahtlose und benutzerfreundliche Erfahrung zu gewährleisten. Wir werden neue Funktionen einführen, die es den Nutzern ermöglichen, ihre Portfolios einfacher zu verwalten, detaillierte Einblicke in ihre Anlagen zu erhalten und schnell auf Marktänderungen zu reagieren. Darüber hinaus werden wir unser Schulungs- und Supportangebot erweitern, um unseren Kunden noch umfassendere Unterstützung zu bieten.
+            
+            4. Globale Expansion
+            Wir werden unsere Reichweite weiter ausbauen und neue Märkte erschließen, um noch mehr Menschen auf der ganzen Welt Zugang zu unseren innovativen Anlagelösungen zu ermöglichen. Durch Partnerschaften mit Finanzinstitutionen und Regulierungsbehörden in verschiedenen Ländern werden wir unsere Präsenz international ausbauen und die Vielfalt unserer Kundenbasis erweitern.
+            Bei InvestAvisor sind wir fest davon überzeugt, dass die Zukunft des Investierens hell und aufregend ist. Mit unseren zukunftsorientierten Projekten wollen wir unsere Position als führender Anbieter von Finanztechnologie festigen und unseren Kunden helfen, ihre finanziellen Ziele zu erreichen und ihre Träume zu verwirklichen. Wir freuen uns darauf, diese Reise gemeinsam mit Ihnen anzutreten und die Zukunft des Investierens zu gestalten.</p>
+        <p2></p2>
+    </div>
+    <div class="board">
+        <h2>Zukünftige Projekte:</h2>
+        <p>Bei InvestAvisor setzen wir weiterhin auf Innovation und Kundenzufriedenheit. 
+            Mit unseren personalisierten Anlagelösungen und der Integration neuer Anlageoptionen wie Kryptowährungen und nachhaltigen Fonds möchten wir unseren Kunden eine vielfältige und zukunftsfähige Investitionserfahrung bieten. Unsere Plattform wird kontinuierlich verbessert, um eine nahtlose Benutzererfahrung zu gewährleisten, und unser engagiertes Team steht Ihnen jederzeit zur Verfügung, um Sie auf Ihrem Anlagepfad zu unterstützen. 
+            Bleiben Sie dran für weitere spannende Entwicklungen bei InvestAvisor!
 
-<h2>Passwort muss aufgrund einer Richtlinienänderung zurückgesetzt werden!</h2>
-
-<form action="skript.php" method="post">
+        </p>
+    </div>
     
-    <label for="username">Benutzername:</label>
-    <input type="text" id="username" placeholder="Benutzername" required>
+    <footer> 
+        &copy; All rights reserved InvestAvisor GmbH 2024
+    </footer>
+    
+    <script>
+        
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+             document.getElementById('menu').style.display = 'block';
+        });
+        document.querySelectorAll('.menu-link').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                var target = this.getAttribute('data-target');
+                window.location.href = target + '.html'; // Redirect to target page
+            });
+        });
+    
+    </script>
 
-    <label for="password">Altes Passwort:</label>
-    <input type="password" id="password" placeholder="Altes Passwort" required>
-
-    <label for="newPassword">Neues Passwort:</label>
-    <input type="password" id="newPassword" placeholder="Neues Passwort" required>
-
-    <input type="checkbox" id="acceptTerms">
-    <label for="acceptTerms">Ich akzeptiere die allgemeinen Geschäftsbedingungen.</label>
-
-    <button type="submit" onclick="resetPassword()" value="submit">Passwort zurücksetzen</button>
-
-</form>
-
-
-
-<script>
-    function resetPassword() {
-       
-        if (!acceptTerms) {
-            alert('Bitte die AGB akzeptieren!');
-            return;
-        }
-
-       
-        alert('Passwort zurückgesetzt');
-        close();
-    }
-</script>
-
-<footer>
-    © 2024 Siebold Gymnasium Würzburg. Alle Rechte vorbehalten.
-</footer>
 </body>
-</html>
 
+</html>

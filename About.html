@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - InvestAdvisor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e395a;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #1e395a;
+            color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font: arial;
+            color: #ffffff;
+        }
+        hr {
+            border-color: #fff;
+        }
+        h2 {
+            color: #1e395a;
+        }
+        nav {
+            background-color: #1e395a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #e9e7e7;
+            border-radius: 5px;
+            width: 100%;
+            left: 50%;
+            text-align: center;
+        }
+        p {
+            line-height: 2;
+            color: #1e395a;
+            width: 93%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <a href="#" class="menu-link" data-target="index">Home</a>
+        <a href="#" class="menu-link" data-target="Login">Anmelden</a>
+        <a href="#" class="menu-link" data-target="Register">Registrieren</a>
+        <a href="#" class="menu-link" data-target="Portfolio">Mein Portfolio</a>
+        <a href="#" class="menu-link" data-target="Forum">Forum</a>
+    </nav>
+    <hr></hr>
+    <section id="about">
+        <h2>Das Team</h2>
+        <p>
+            InvestAvisor ist ein aufstrebendes Startup, das die Finanzwelt durch innovative Technologie und erstklassige Mitarbeiter revolutioniert. Das Team von Investavisor besteht aus einer eklektischen Mischung von Fachleuten, die ihre Leidenschaft für Finanzen und Technologie teilen.
+
+            An erster Stelle steht das Gründerduo, bestehend aus Finanzexperten und Technikgenies, die ihre Vision verwirklichen und die Zukunft der Anlageberatung neu definieren wollen. Sie bringen nicht nur fachliche Expertise mit, sondern auch ein unerschütterliches Engagement für Transparenz und Kundenzufriedenheit.
+            
+            Die Mitarbeiter von Investavisor zeichnen sich durch ihre Vielseitigkeit und ihre Fähigkeit aus, innovative Lösungen für komplexe Probleme zu entwickeln. Von Datenwissenschaftlern, die Algorithmen zur Analyse von Markttrends entwickeln, bis hin zu UX-Designern, die intuitive Benutzeroberflächen gestalten, arbeitet das Team Hand in Hand, um die bestmögliche Anwendererfahrung zu bieten.
+        </p>
+        <h2>
+            Besonders an uns
+        </h2>    
+        <p>    
+            Was Investavisor besonders macht, ist die Unternehmenskultur, die von Zusammenarbeit, Kreativität und einem gemeinsamen Streben nach Exzellenz geprägt ist. Jeder Mitarbeiter wird ermutigt, neue Ideen einzubringen und Verantwortung zu übernehmen, was zu einem dynamischen und innovativen Arbeitsumfeld führt.
+
+            Insgesamt repräsentiert das Team von Investavisor das Beste aus beiden Welten: Fachwissen in Finanzen kombiniert mit technologischer Raffinesse. Mit ihrem unermüdlichen Engagement und ihrer Innovationskraft sind sie auf dem besten Weg, die Art und Weise zu verändern, wie Menschen ihre Finanzen verwalten und investieren.
+        </p>
+    </section>
+    <script>
+        document.querySelectorAll('.menu-link').forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                var target = this.getAttribute('data-target');
+                window.location.href = target + '.html';
+            });
+        });
+    </script>
+</body>
+</html>
